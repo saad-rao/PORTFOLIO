@@ -1,0 +1,72 @@
+Create a high-quality, modern portfolio website using React.js, designed to run in Replit. The website must be responsive, professional, and include smooth animations for an engaging user experience. Follow these requirements:
+
+1. **Tech Stack**:
+   - Use React.js (via CDN like `https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js` and `https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js`).
+   - Use JSX with Babel (`https://cdn.jsdelivr.net/npm/@babel/standalone@7.20.15/babel.min.js`).
+   - Use Tailwind CSS via CDN (`https://cdn.tailwindcss.com`) for styling.
+   - Use Framer Motion (`https://cdn.jsdelivr.net/npm/framer-motion@10.12.16/dist/framer-motion.js`) for animations.
+   - No external backend or local file I/O; keep it client-side only.
+
+2. **Structure**:
+   - Create a single HTML file (`index.html`) with inline JavaScript for React components.
+   - Organize React components in a modular way (e.g., `Navbar`, `Hero`, `About`, `Projects`, `Skills`, `Contact`, `Footer`).
+   - Use a single `App.js` component to render all sections.
+
+3. **Design and Features**:
+   - **Navbar**: Sticky, responsive navbar with links to Home, About, Projects, Skills, and Contact sections. Add a hover animation (e.g., underline or scale effect).
+   - **Hero Section**: Full-screen section with a animated heading (e.g., fade-in or slide-in) displaying "[Your Name] - [Your Role, e.g., Web Developer]" and a call-to-action button linking to Contact.
+   - **About Section**: Brief bio with a profile picture placeholder. Animate the section to slide in on scroll.
+   - **Projects Section**: Display 3 project cards with title, description, tech stack, and links to GitHub/demo. Add hover animations (e.g., card scale or shadow).
+   - **Skills Section**: List of skills as icons or tags with a staggered fade-in animation.
+   - **Contact Section**: Form-like layout (no submission logic, just display email and social links). Animate form elements on load.
+   - **Footer**: Simple footer with copyright and social media links.
+
+4. **Animations**:
+   - Use Framer Motion for:
+     - Fade-in and slide-in transitions for each section on page load or scroll.
+     - Hover effects on buttons and project cards (e.g., scale or rotate).
+     - Staggered animations for skills or project lists.
+   - Add subtle CSS animations (e.g., `@keyframes`) for navbar hover effects or button pulses.
+   - Ensure animations are smooth and performant (use `will-change` or `transform` for optimization).
+
+5. **Responsiveness**:
+   - Use Tailwind CSS classes to ensure the website is fully responsive across mobile, tablet, and desktop.
+   - Test for breakpoints (e.g., `sm:`, `md:`, `lg:`) to adjust layouts (e.g., stack project cards on mobile).
+
+6. **Customization**:
+   - Include placeholder content (e.g., "[Your Name]", "[Your Bio]") with clear comments on how to replace it.
+   - Provide a `data.js` file or object in `App.js` to store customizable data (name, bio, projects, skills, social links).
+
+7. **Replit Compatibility**:
+   - Use CDN-based dependencies only (no `npm install`).
+   - Ensure the project runs in Replit's browser-based environment with a single `index.html` file.
+   - Include a `script` tag with `type="text/babel"` for JSX compilation.
+   - Add comments explaining how to run the project in Replit (e.g., click "Run" button).
+
+8. **Performance and Best Practices**:
+   - Minimize external dependencies to keep the project lightweight.
+   - Use functional components and React hooks (`useState`, `useEffect` for scroll animations).
+   - Add comments explaining each component and animation logic.
+   - Ensure no console errors or warnings.
+
+9. **Output**:
+   - Provide a complete `index.html` file with all code (HTML, JSX, CSS via Tailwind, JavaScript).
+   - Include a sample `data.js` or data object with placeholder content.
+   - Ensure the website loads in under 5 seconds in Replit's preview.
+
+Example data structure for customization:
+```javascript
+const portfolioData = {
+  name: "[Your Name]",
+  role: "[Your Role, e.g., Web Developer]",
+  bio: "[Your bio here]",
+  projects: [
+    { title: "Project 1", description: "...", stack: ["React", "Tailwind"], github: "#", demo: "#" },
+    // More projects
+  ],
+  skills: ["JavaScript", "React", "Tailwind CSS", "..."],
+  social: { github: "#", linkedin: "#", email: "your.email@example.com" },
+};
+```
+
+Deliver the complete code wrapped in a single `index.html` file, ready to copy-paste into Replit. Include clear instructions in comments at the top of the file on how to customize and run the project. The final website should look professional, modern, and ready for submission as a portfolio.
